@@ -1,0 +1,11 @@
+<html>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<body style="max-width:640px ; font-family:century gothic ; font-size:16px;">
+<p><img src="images/Landing.png" alt="Welcome" /></p>
+<p>&nbsp;</p>
+<p>Thank you for subscribing to JamCulture! Music has always brought people together. We are very happy to have you in this community. JamCulture  will be available as an app on Google PlayStore very soon. We will keep you posted.&nbsp;</p>
+<p>&nbsp;</p>
+Happy Jamming,<br/>
+<p style="font-size:20px; color:#743D2E;  font-family: 'Pacifico', cursive;">Team JamCulture</p>
+</body>
+</html>

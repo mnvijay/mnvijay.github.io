@@ -4,12 +4,20 @@ $(document).ready(function(){ // wait for document ready
     $(window).scrollTop(0);
 });
 
-    $("button").click(function() {
+    $("button1").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#d_profiles").offset().top},
+        'slow');
+});
+    
+    $("button2").click(function() {
     $('html,body').animate({
         scrollTop: $("#m_profiles").offset().top},
         'slow');
 });
     
+    
+
     function greedyJumbotron() {
     var HEIGHT_CHANGE_TOLERANCE = 300; // Approximately URL bar height in Chrome on tablet
 
@@ -25,6 +33,7 @@ $(document).ready(function(){ // wait for document ready
 
     function update() {
         jumbotron.css('height', viewportHeight + 'px');
+        jumbatron.css('background-position', '0vh 85.31vh, ');
     }
 
     update();
@@ -32,21 +41,65 @@ $(document).ready(function(){ // wait for document ready
 
 $('.wrap').each(greedyJumbotron);
 
+    function waves() {
+    var HEIGHT_CHANGE_TOLERANCE = 300; // Approximately URL bar height in Chrome on tablet
 
+    var jumbotron = $(this);
+    var viewportHeight = $(window).height();
+
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
+
+    function update() {
+        jumbotron.css('height', viewportHeight + 'px');
+        jumbotron.css({backgroundPosition: '0vh 85.31vh -100px 0px'});
+    }
+
+    update();
+}
+
+$('#m_home').each(waves);
+
+     function waves1() {
+    var HEIGHT_CHANGE_TOLERANCE = 300; // Approximately URL bar height in Chrome on tablet
+
+    var jumbotron = $(this);
+    var viewportHeight = $(window).height();
+
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
+
+    function update() {
+        jumbotron.css('height', viewportHeight + 'px');
+      
+    }
+
+    update();
+}
+
+$('.foot').each(waves1);
     
     
-   $(window).scroll(function() {
-   var hT = $('#lastsection').offset().top,
-       hH = $('#lastsection').outerHeight(),
+   /* $(window).scroll(function() {
+   var hT = $('#m_jCfooter').offset().top,
+       hH = $('#m_jCfooter').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS > (hT+hH-wH)){
-       $("#m_tdb").hide();
+       $("#m_download").hide();
    }
     else{
-       $("#m_tdb").show();
+       $("#m_download").show();
  }
-});
+}) */
     
    /* $(window).scroll(function() {
    var hT = $('#m_con2').offset().top,
@@ -61,7 +114,7 @@ $('.wrap').each(greedyJumbotron);
  }
 }); */
     
-		// init           
+/*		// init           
 							var controller = new ScrollMagic.Controller();
 
 							// define movement of panels
@@ -226,5 +279,5 @@ $('.wrap').each(greedyJumbotron);
 		.to("#bigPhone1", 1, {x:"-=55" ,y: "+=370"});	
                 new ScrollMagic.Scene({triggerHook: 'onEnter',offset:"5780"})
                     .setTween(tween7)
-					.addTo(controller);
+					.addTo(controller);*/
 	});

@@ -3,6 +3,7 @@ html, body{
     background-color: rgba(219, 134, 35, 0.95 );
     font-family: 'Open Sans', sans-serif;
     z-index: 1;
+    min-height: 100%;
 }
 
 html * {
@@ -15,6 +16,7 @@ html * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline:none;
 }
 
 @font-face{
@@ -30,6 +32,436 @@ html * {
 @font-face{
     font-family: "Pacifico";
     src: url("../fonts/pacifico/Pacifico.ttf");
+}
+
+#d_wrap{
+    overflow-x: hidden;
+}
+
+#d_home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/Background_Image.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#d_home img{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+}
+
+#d_home h3{
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+}
+
+#d_home .col-md-2 a{
+    position: absolute;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Roboto Light', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 82px;
+    z-index: 1;
+    top:20px;
+    margin-top: 10px;
+    
+}
+
+#d_home h4{
+    text-align: right;
+    font-family: 'Roboto Light', serif;
+    color: white;
+    line-height:40px ;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top:30vh;
+}
+
+#d_home h5{
+    position: relative;
+    text-align: right;
+    font-family: 'Roboto Light', serif;
+    color:  #db8623;
+    line-height:40px ;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#d_playstore{
+    float: right;
+}
+
+#d_info{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(219, 134, 35, 0.95 );
+}
+
+#d_info h4{
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto Light', serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#d_info p{
+    position: relative;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    font-family: 'Roboto Light', serif;
+    max-width: 700px;
+    margin-top: 50px;
+    left:50%;
+    margin-left: -350px;
+   
+}
+
+#d_scrolldown{
+    position: relative;
+    height: 96px;
+    width: 96px;
+    left: 50%;
+    margin-left: -44px;
+    margin-top:50px;
+    z-index: 1;
+    
+}  
+
+.Line1{
+    height:25vh; 
+    width:8px;
+    background:white;
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+    display: block;
+    left: 50%;
+    border-width: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius: 50px;
+}
+
+.vertical_line{
+    height:30vh; 
+    width:8px;
+    background:white;
+    position: absolute;
+    margin-top: -10vh;
+    z-index: 2;
+    display: block;
+    left: 50%;
+    border-width: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius: 50px;
+}
+
+#d_button2{
+    position: relative;
+    left: 50%;
+    margin-left: -45px;
+    margin-top:22vh;
+    z-index: 3;
+}
+
+#d_artistsLine{
+    position: relative;
+    margin-top: 2vh;
+    height: 60vh;
+}
+
+#circle1 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: white;
+    margin: 20px;
+    left: 50%;
+    margin-left: -2.5px;
+    }
+
+#circle2 {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: white;
+    margin: 20px;
+    left: 50%;
+    margin-left: 0px;
+    }
+
+#circle3 {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: white;
+    margin: 20px;
+    left: 50%;
+    margin-left: 1px;
+    }
+
+#d_profiles{
+    width: 100%;
+    height: 400vh;
+    background-color: rgba(219, 134, 35, 0.95 );
+}
+
+#d_artistsProfile{
+    height: 100vh;
+    width: 100%;
+}
+
+#d_artistsProfile h4{
+    font-family: 'Roboto Light', serif;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#d_artistsProfile p{
+    font-family: 'Roboto Light', serif;
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#d_Aphone1{
+    position: absolute;
+    z-index: 1;
+    left:50%;
+    margin-left: -200px;
+}
+
+#d_Aphone2{
+    position: absolute;
+    left:50%;
+    margin-left: -180px;
+    margin-top: 40px;
+}
+
+#d_bPhone1{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 30px;
+}
+
+#d_bPhone2{
+    position: absolute;
+    left:50%;
+    margin-left: -200px;
+    margin-top: 50px;
+}
+
+#d_gigsPhone{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.right{
+    text-align: right;
+    margin-top: 175px;
+}
+
+.left{
+    text-align-last: left;
+    margin-top: 175px;
+}
+
+#d_gigSection{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/lastWave.png") no-repeat;
+    background-color: rgba(219, 134, 35, 0.95 );
+   
+}
+
+#d_gigSection .row{
+    margin-top: 100px;
+}
+
+#d_gPhone1{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 00px;
+    
+}
+
+#d_gPhone2{
+     position: absolute;
+    left:50%;
+    margin-left: -230px;
+    margin-top: 40px;
+}
+
+#d_lastSection{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(219, 134, 35, 0.95 );
+}
+
+#d_lastSection h4{
+    font-family: 'Roboto Light', serif;
+    color: white;
+    font-size: 30px;
+    margin-top: 3em;
+}
+
+#d_lastSection {
+    font-family: 'Roboto Light', serif;
+    color: white;
+}
+
+.input-box{
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+	max-width: 400px;
+}
+
+.input-type-box{
+    margin-top: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 35px;
+    width: 400px;
+    height: 44px;
+    padding: 2px 20px;
+    font-family:'Roboto Light',sans-serif;
+    font-size: 14px;
+    color: rgba(219, 134, 35, 0.95 );
+}
+
+.subscribe{
+    width: 140px;
+    height: 44px;
+    border-radius: 35px;
+	border: none;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    float: right;
+}
+
+.subscribe-response{
+	text-align: center;
+    font-size: 15px;
+	padding-top: 10px;
+    color: white;
+    font-family: open sans, sans-serif;
+	font-weight: bolder;
+	width:400px;
+}
+
+#emailHelp{
+    color: rgba(255, 255, 255, 0.7 );
+    width:493px;
+}
+
+#d_lastSection button{
+    float: right;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Roboto Light', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 82px;
+    z-index: 1;
+    top:20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#d_lPhone{
+    position: absolute;
+    left: 30%;
+    margin-left: -200px;
+    margin-top: -200px;
+    z-index: 2;
+    
+}
+
+#d_footer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #422b25;
+    z-index: 10;
+}
+
+#d_footer .row{
+    margin-top: 20px;
+}
+
+.d_post{
+    font-size: 14px;
+}
+
+.d_post li{
+    padding: 6px;
+}
+
+.d_post a{
+    font-family: 'Roboto Light', serif;
+    color: white;
+}
+
+.d_post a:link, .d_post a:visited{
+    
+}
+
+.d_post li:hover a{
+    color: white;
+}
+
+.d_icons p{
+    text-align: center;
+    font-family: 'Roboto Light', serif;
+    color: white;
+}
+
+.d_icons ul{
+    text-align: center;  
+}
+
+ .d_icons li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.d_contact p{
+     font-family: 'Roboto Light', serif;
+    color: white;
+    text-align: right;
+    padding: 3px;
 }
 
 #m_wrapper{
@@ -66,7 +498,7 @@ html * {
     background: none;
     color: white;
     border: 1px solid white;
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto Light', serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 82px;
@@ -74,20 +506,24 @@ html * {
     right: 3em;
     z-index: 1;
     top:20px;
-    
+    margin-right: 0px;
 }
 
 #m_home{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url("../images/waves.png") no-repeat bottom,url("../images/background.jpg") no-repeat;
-    background-size:100% 15%,cover;
-    background-position: 0vh 85.30vh,-100px 0px;
-   transition: height 1000000s ease;
+    background: url("../images/waves.png") no-repeat bottom,url("../images/mob_bg2.jpeg") no-repeat;
+    background-size:130% 25%,cover;
+    background-position: 0vh 75.31vh, 0px 0px;
+    transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
     -moz-transition: height 1000000s ease;
     -o-transition: height 1000000s ease;
+    transition:  background-position 1000000s ease;
+    -webkit-transition:  background-position 1000000s ease;
+    -moz-transition:  background-position 1000000s ease;
+    -o-transition:  background-position 1000000s ease;
 }
 
 #m_homeText{
@@ -111,9 +547,10 @@ html * {
 }
     
 #m_homeText h4{
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto Light', serif;
     color: lightgrey;
     line-height:40px ;
+    margin-top: -50px;
 }
 
 #m_trigger{
@@ -134,7 +571,7 @@ html * {
 #m_info{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 600px;
     background-color: rgba(219, 134, 35, 0.95 );
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
@@ -146,7 +583,7 @@ html * {
     position: relative;
     text-align: center;
     color: white;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     font-size:30px ;
     font-weight: 300;
     margin-top: 10em;
@@ -155,7 +592,7 @@ html * {
 
 #m_info .row p{
     position: relative;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     color: white;
     font-size:20px ;
     font-weight:300;
@@ -177,12 +614,13 @@ html * {
     height: 70px;
     margin-left:-30px;
     margin-top: 0%;
+    z-index: 1;
 }  
 
 #m_profiles{
     position: relative;
     width: 100%;
-    height: 400vh;
+    min-height: 3000px;
     background-color: rgba(219, 134, 35, 0.95 );
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
@@ -193,7 +631,7 @@ html * {
 #m_artistsProfile{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 600px;
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
     -moz-transition: height 1000000s ease;
@@ -201,7 +639,30 @@ html * {
 }
 
 #m_artistsProfile .row .m_genericPhoneBox{
-    height: 70vh;
+    min-height: 380px;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+    
+}
+
+#m_a1{
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    bottom:-20px;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+}
+
+#m_b1{
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+    bottom:-20px;
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
     -moz-transition: height 1000000s ease;
@@ -209,25 +670,19 @@ html * {
 }
 
 #m_A1{
-    position: absolute;
+    position: relative;
     left: 50%;
-    margin-left: -90px;
-    bottom:-30px;
+    margin-left: -100px;
+    bottom:-20px;
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
     -moz-transition: height 1000000s ease;
     -o-transition: height 1000000s ease;
-}
-
-#m_A2{
-    position: absolute;
-    left: 50%;
-    margin-left: -140px;
-    bottom: -10px;
+    
 }
 
 #m_artistsProfile .row .m_genericTextBox{
-    height: 30vh;
+    min-height: 220px;
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
     -moz-transition: height 1000000s ease;
@@ -238,13 +693,13 @@ html * {
     position: relative;
     text-align: center;
     color: white;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     font-weight: 300;
 }
 
 #m_artistsProfile p{
     position: relative;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     color: white;
     font-weight:300;
     text-align: center;
@@ -252,29 +707,81 @@ html * {
     padding: 10px;
 }
 
-#m_artistsProfile .m_jCbands{
-
-    margin-left: -70px;
-}
-
-#m_artistsProfile .m_playRoom{
-    margin-left:-80px ;
-}
-
-#m_artistsProfile .m_gigs{
-    margin-left: -80px;
-    margin-top: -40px;
-}
-
 #m_artistsProfile .m_genericTextBox #m_gigsP{
-    margin-top: -10px;
-    padding: 5px;
+    padding: 10px;
+}
+
+#m_gigsProfile{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+}
+
+#m_g1{
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    bottom:-20px;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+}
+
+#m_gigsProfile .row .m_genericPhoneBox{
+    height: 70vh;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+}
+
+#m_gigsProfile .row .m_genericTextBox{
+    height: 50vh;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
+}
+
+#m_gigsProfile h4{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Light', serif;
+    font-weight: 300;
+}
+
+#m_gigsProfile p{
+    position: relative;
+    font-family: 'Roboto Light', serif;
+    color: white;
+    font-weight:300;
+    text-align: center;
+    letter-spacing:0px;
+    padding: 10px;
+}
+
+.m_gigSection{
+    background: url("../images/lastWave.png") no-repeat;
+    background-size: cover;
+    background-position:-50px;
+    background-color: rgba(219, 134, 35, 0.95 );
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
 }
 
 #m_jCfooter{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
+    min-height: 720px;
     background-color: rgba(219, 134, 35, 0.95 );
     transition: height 1000000s ease;
     -webkit-transition: height 1000000s ease;
@@ -285,22 +792,23 @@ html * {
 #m_jCfooterTop{
     position: relative;
     height: 60vh;
+    min-height: 420px;
     width: 100%;
 }
 
 #m_jCfooterTop h4{
-    position: relative;
+    position: relat¡1xive;
     text-align: center;
     color: white;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     font-size:20px ;
     font-weight: 300;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 #m_jCfooterTop p{
     position: relative;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     color: white;
     font-weight:300;
     text-align: center;
@@ -310,33 +818,94 @@ html * {
 
 #m_jCfooterTop #m_jCplayStore{
     position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    left: 50%;
+    margin-left: -88px;
+    margin-top: 30px;
+    width: 175px;
+    height: 52px;
     
+}
+
+.m_input-box{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	max-width: 400px;
+}
+
+.m_input-type-box{
+    margin-top: 0px;
+    border: solid 1px #ffffff;
+    border-radius: 35px;
+    width: 300px;
+    height: 44px;
+    padding: 2px 20px;
+    font-family:'Roboto Light',sans-serif;
+    font-size: 14px;
+    color: rgba(219, 134, 35, 0.95 );
+    text-align: center;
+}
+
+.m_subscribe{
+    width: 140px;
+    height: 44px;
+    border-radius: 35px;
+	border: 1px white solid;
+    color: white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+.m_subscribe-response{
+	text-align: center;
+    font-size: 15px;
+	padding-top: 10px;
+    color: white;
+    font-family: open sans, sans-serif;
+	font-weight: bolder;
+	width:400px;
+}
+
+#m_emailHelp{
+    color: rgba(255, 255, 255, 0.7 );
+    width:493px;
 }
 
 #m_jCfooterBottom{
     position: absolute;
     background-color: #422b25;
-    height: 40vh;
+    height: 45vh;
+    min-height: 300px;
     width: 100%;
     bottom: 0;
     color: white;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
 }
 
 #m_jCfooterBottom .row ul{
     position: relative;
     text-align: center;
-    padding-top: 10px;
+    margin-top:5px;
 }
 
 #m_jCfooterBottom .row li{
      line-height: 20px;  
+     padding: 10px;
 }
 
 #m_jCfooterBottom .row li a{
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
     color: white;
     font-size: 14px;
     font-weight: 300;
@@ -344,24 +913,34 @@ html * {
 }
 
 #m_icons ul{
-    padding-top: 10px;
-    
+    padding-top: 0px;
 }
 
 #m_icons li{
     display: inline-block;
-    padding: 10px;
+    padding: 0px 10px 5px 10px;
     text-align: center;
 }
 
-#m_icons p{
+
+#m_contactUs{
     position: relative;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
+    color: white;
     display: block;
     text-align: center;
     padding: 2.5px;
     line-height: 3px;
     font-weight: 300;
+}
+
+.blur{
+    margin-top: 25px;
+    font-family: 'Roboto Light', serif;
+}
+
+.blur1{
+    font-family: 'Roboto Light', serif;
 }
 
 #copyrights{
@@ -373,7 +952,8 @@ html * {
 
 #copyrights p{
     position: relative;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Roboto Light', serif;
+    color: rgba(255,255,255, 0.3);
     padding: 2px;
     bottom: 0;
 }
